@@ -85,10 +85,10 @@ class HeartDiseaseApp:
     
     def train_models(self):
         """Train all models"""
-        data_path = r"C:\Users\Asus\heart.csv"
+        data_path = r"heart.csv"
         
         if not os.path.exists(data_path):
-            st.error("Heart dataset not found. Please ensure the file exists at C:\\Users\\Asus\\heart.csv")
+            st.error("Heart dataset not found. Please ensure the file exists at heart.csv")
             return False
         
         progress_bar = st.progress(0)
